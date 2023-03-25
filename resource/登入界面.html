@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入界面</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #box1 {
+            /*background: rgb(255, 255, 255, 0.7) none repeat scroll 0 0;*/
+            /* position: relative; */
+            background: rgb(255, 255, 255, 0.5);
+            width: 485px;
+            height: 280px;
+            /* margin-left: 34%; */
+            margin: auto auto;
+            margin-top: 10%;
+            /* align-content: center; */
+            border-radius: 15px 15px;
+            box-shadow: 5px 5px 18px rgb(32, 31, 31);
+        }
+
+        #box1:hover {
+            position: relative;
+            border: 1px black solid;
+            top: 5px;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            /* background-color: rgb(0, 0, 0); */
+            background-image: url("14.jpeg");
+            background-repeat: unset;
+
+            /* background-position: 100%; */
+            background-size: 100%;
+
+            /*min-height: 100vh /*滚动条*/
+
+        }
+
+        #box2 {
+            width: 250px;
+            position: relative;
+            top: 60px;
+            left: 28%;
+            /* margin:auto; */
+            /* margin-left: 28%; 
+            padding-top: 60px; */
+
+        }
+
+
+        #username {
+            border-radius: 15px 15px;
+            border: 1px rgb(150, 150, 150) solid;
+            width: 200px;
+            height: 29px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #username:hover {
+            border: 2px black solid;
+        }
+
+        #password {
+            border-radius: 15px 15px;
+            border: 1px rgb(150, 150, 150) solid;
+            width: 200px;
+            height: 29px;
+            margin-top: 30px;
+
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #password:hover {
+            border: 2px black solid;
+        }
+
+        #login {
+            border-radius: 15px 15px;
+            border: 1px rgb(209, 206, 206) solid;
+            margin-top: 30px;
+            margin-left: -4px;
+            width: 240px;
+            height: 29px;
+            color: rgb(41, 41, 41);
+            font-weight: bolder;
+        }
+
+        #login:hover {
+            border: 1px black solid;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+
+        input::placeholder {
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<div id="box1">
+    <div id="box2">
+        <form action="http://127.0.0.1:5500">
+            <input id="username" type="text" name="username" placeholder="用户名"><br>
+            <input id="password" type="text" name="password" placeholder="密  码"><br>
+            <input id="login" type="submit" value="登   入">
+        </form>
+
+    </div>
+</div>
+
+<body>
+
+</body>
+<script type="text/javascript">
+
+</script>
+
+</html>

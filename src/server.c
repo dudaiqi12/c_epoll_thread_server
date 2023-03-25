@@ -40,7 +40,7 @@ int initListenFd(int port)
     ret = bind(server_sock, (struct sockaddr *)&sockaddr_in, sizeof sockaddr_in);
     if (ret == -1)
     {
-        perror("bind");
+        perror("binds");
         return -1;
     }
 

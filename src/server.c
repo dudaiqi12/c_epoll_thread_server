@@ -100,6 +100,7 @@ int EpollRun(int server_sock)
                 //能快速的进入下一个while循环 快速的处理请求
                 pthread_create(&info->client_thread_pid,NULL,acceptClient,info);
                 //acceptClient(server_sock, epoll);
+                //第一次提交分支
             }
             else
             {

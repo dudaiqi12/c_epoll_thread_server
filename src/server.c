@@ -107,7 +107,7 @@ int EpollRun(int server_sock)
 
                 //recvHttpRequest(ep_events[i].data.fd, epoll);
                 pthread_create(&info->client_thread_pid,NULL,recvHttpRequest,info);
-                //printf("\n----------------------\n");
+                //printf("\n---------  -------------\n");
             }
         }
     }
